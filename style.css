@@ -1,0 +1,86 @@
+* {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+em,
+b,
+i {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+pre,
+code,
+kbd {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+code[class*='language-'] {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+  outline: 1px dotted red;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 240px 1fr 240px;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "h h h" "n m a" "f f f";
+  height: 100vw;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(8rem, auto) 1fr minmax(8rem, auto) auto;
+    grid-template-areas: "h" "n" "m" "a" "f";
+  }
+}
+
+header {
+  grid-area: h;
+}
+
+nav {
+  grid-area: n;
+}
+
+main {
+  grid-area: m;
+}
+
+aside {
+  grid-area: a;
+}
+
+footer {
+  grid-area: f;
+}

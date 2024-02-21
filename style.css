@@ -1,3 +1,35 @@
+:root {
+  --bg-color: #fff;
+  --fg-color: #000;
+  --header-bg-color: #333;
+  --header-fg-color: #ccc;
+  --nav-bg-color: #ccc;
+  --nav-fg-color: #000;
+  --main-bg-color: #fff;
+  --main-fg-color: #000;
+  --aside-bg-color: #ddd;
+  --aside-fg-color: #000;
+  --footer-bg-color: #eee;
+  --footer-fg-color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #000;
+    --fg-color: #fff;
+    --header-bg-color: #333;
+    --header-fg-color: #ccc;
+    --nav-bg-color: #444;
+    --nav-fg-color: #fff;
+    --main-bg-color: #000;
+    --main-fg-color: #fff;
+    --aside-bg-color: #555;
+    --aside-fg-color: #fff;
+    --footer-bg-color: #333;
+    --footer-fg-color: #eee;
+  }
+}
+
 * {
   font-family: 'IBM Plex Sans KR', sans-serif;
   font-weight: 400;
@@ -12,6 +44,8 @@ body {
   font-size: 1.6rem;
   margin: 0;
   padding: 0;
+  background-color: var(--bg-color);
+  color: var(--fg-color);
 }
 
 h1,
@@ -41,46 +75,65 @@ code[class*='language-'] {
   font-family: 'IBM Plex Mono', monospace;
 }
 
-header,
-nav,
-main,
-aside,
-footer {
-  outline: 1px dotted red;
-}
-
 .container {
   display: grid;
-  grid-template-columns: 240px 1fr 240px;
+  grid-template-columns: 24rem 1fr 24rem;
   grid-template-rows: auto 1fr auto;
-  grid-template-areas: "h h h" "n m a" "f f f";
+  grid-template-areas: 'h h h' 'n m a' 'f f f';
   height: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--fg-color);
 }
 
 @media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: auto minmax(8rem, auto) 1fr minmax(8rem, auto) auto;
-    grid-template-areas: "h" "n" "m" "a" "f";
+    grid-template-rows: auto auto 1fr auto auto;
+    grid-template-areas: 'h' 'n' 'm' 'a' 'f';
   }
 }
 
 header {
   grid-area: h;
+  background-color: var(--header-bg-color);
+  color: var(--header-fg-color);
+  position: sticky;
+  top: 0;
+  margin: 0;
+  padding: 1rem;
 }
 
 nav {
   grid-area: n;
+  background-color: var(--nav-bg-color);
+  color: var(--nav-fg-color);
+  margin: 0;
+  padding: 1rem;
 }
 
 main {
   grid-area: m;
+  background-color: var(--main-bg-color);
+  color: var(--main-fg-color);
+  margin: 0;
+  padding: 1rem;
 }
 
 aside {
   grid-area: a;
+  background-color: var(--aside-bg-color);
+  color: var(--aside-fg-color);
+  margin: 0;
+  padding: 1rem;
 }
 
 footer {
   grid-area: f;
+  background-color: var(--footer-bg-color);
+  color: var(--footer-fg-color);
+  margin: 0;
+  padding: 1rem;
 }
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss>
+  <channel>
+    {{#urls}}
+    <item>
+      <link>{{loc}}</link>
+      <pubDate>{{#datetime}}{{lastmod}}{{/datetime}}</pubDate>
+    </item>
+    {{/urls}}
+  </channel>
+</rss>

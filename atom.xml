@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="https://www.w3.org/2005/Atom">
+  <entry>
+    <link href="https://soosoo.tech/" />
+    <updated>2024-03-06T17:05:28Z</updated>
+  </entry>
+  <entry>
+    <link href="https://soosoo.tech/services/" />
+    <updated>2024-03-07T22:59:16Z</updated>
+  </entry>
+  <entry>
+    <link href="https://soosoo.tech/services/education/" />
+    <updated>2024-03-07T22:58:12Z</updated>
+  </entry>
+  <entry>
+    <link href="https://soosoo.tech/services/consulting/" />
+    <updated>2024-03-07T22:45:18Z</updated>
+  </entry>
+  <entry>
+    <link href="https://soosoo.tech/services/outsourcing/" />
+    <updated>2024-03-07T22:47:27Z</updated>
+  </entry>
+</feed>

@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://soosoo.tech/index.html</loc>
-    <lastmod>2024-03-01</lastmod>
+    <loc>https://soosoo.tech/</loc>
+    <lastmod>2024-03-06T17:05:28Z</lastmod>
+  </url>
+  <url>
+    <loc>https://soosoo.tech/services/</loc>
+    <lastmod>2024-03-07T22:59:16Z</lastmod>
+  </url>
+  <url>
+    <loc>https://soosoo.tech/services/education/</loc>
+    <lastmod>2024-03-07T22:58:12Z</lastmod>
+  </url>
+  <url>
+    <loc>https://soosoo.tech/services/consulting/</loc>
+    <lastmod>2024-03-07T22:45:18Z</lastmod>
+  </url>
+  <url>
+    <loc>https://soosoo.tech/services/outsourcing/</loc>
+    <lastmod>2024-03-07T22:47:27Z</lastmod>
   </url>
 </urlset>

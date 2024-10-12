@@ -52,6 +52,7 @@ footer {
 pre {
   display: flex;
   justify-content: center;
+  line-height: 5em;
 }
 
 code {
